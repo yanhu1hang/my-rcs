@@ -41,3 +41,8 @@ HISTFILESIZE=9999999999
 HISTSIZE=9999999999
 
 alias ls=ls
+
+# read-only emacs
+function emacsro {
+    emacs $1 --eval '(setq buffer-read-only t)'
+}
